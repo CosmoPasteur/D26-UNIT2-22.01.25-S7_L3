@@ -3,121 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>"Libreria"</title>
+    <title>Bootstrap demo</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   </head>
   <body>
-    <nav>
-      <div class="container-fluid">
-        <div class="d-flex justify-content-between align-items-center">
-          <a class="navbar-brand" href="#">Logo</a>
-        </div>
-      </div>
-      <div class="row">
-        <a href=""></a>
-      </div>
-    </nav>
-    <div class="container mt-5">
-      <!-- CARD 1 -->
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://www.ibs.it/images/9788804666929_0_0_0_0_0.jpg"
-              class="card-img-top"
-              alt="Copertina Libro"
-            />
-            <div class="card-body">
-              <h5 class="card-title">I Pilastri Della Terra</h5>
-              <p class="card-text">17.58$</p>
-              <!-- <a href="#" class="btn btn-primary">Aggiungi</a> -->
-              <a href="#" class="btn btn-light border border-black" onclick="deleteCard(this)"
-                >Scarta</i
-              ></a>
-            </div>
+    <div class="container">
+      <div id="book-list" class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <!-- <div class="card">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
-        </div>
-        <!-- CARD 2 -->
-        <div class="col-12 col-md-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://www.lafeltrinelli.it/images/9788845299698_0_0_536_0_75.jpg"
-              class="card-img-top"
-              alt="Copertina Libro"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Il Cacciatore di Draghi</h5>
-              <p class="card-text">11.40$</p>
-              <!-- <a href="#" class="btn btn-primary">Aggiungi</a> -->
-              <a href="#" class="btn btn-light border border-black" onclick="deleteCard(this)"
-                >Scarta</i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <!-- CARD 3 -->
-        <div class="col-12 col-md-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="https://m.media-amazon.com/images/I/61SWVg400eL._SY466_.jpg"
-              class="card-img-top"
-              alt="Copertina Libro"
-            />
-            <div class="card-body">
-              <h5 class="card-title">L'Arte della guerra</h5>
-              <p class="card-text">8.08$</p>
-              <!-- <a href="#" class="btn btn-primary">Aggiungi</a> -->
-              <a href="#" class="btn btn-light border border-black" onclick="deleteCard(this)"
-                >Scarta</i
-              ></a>
-            </div>
-          </div>
-        </div>
+        </div> -->
       </div>
     </div>
-
-    <section class="container mt-5 border p-5">
-        <div>
-            <ul class="container ">
-                <li >
-                    <div class="d-flex justify-content-between">
-                        <h6>I Pilastri Della Terra</h6>
-                        <a href="#" class="btn btn-light" onclick="deleteCard(this)"><i class="bi bi-trash3"></i></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="d-flex justify-content-between">
-                        <h6>Il Cacciatore di Draghi</h6>
-                        <a href="#" class="btn btn-light" onclick="deleteCard(this)"><i class="bi bi-trash3"></i></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="d-flex justify-content-between">
-                        <h6>L'Arte della guerra</h6>
-                        <a href="#" class="btn btn-light" onclick="deleteCard(this)"><i class="bi bi-trash3"></i></a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="mt-5">
-            <a href="#" class="btn btn-success">Compra ora</a>
-            
-        </div>
-    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="java.js"></script>
   </body>
 </html>
-
-<!-- <i class="bi bi-trash3"></i> -->
