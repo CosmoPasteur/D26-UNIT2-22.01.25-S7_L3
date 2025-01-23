@@ -17,6 +17,17 @@ fetch(" https://striveschool-api.herokuapp.com/books")
       const col = document.createElement("div");
       col.classList.add("col");
 
+      const card = document.createElement("div");
+      col.classList.add("card");
+
+      const img = document.createElement("img");
+      img.classList.add("card-img-top");
+      img.alt = book.title;
+      img.src = book.img;
+
+      const cardBody = document.createElement("div");
+      cardBody.classList.add("card-body");
+
       col.innerHTML = `
                         <div class="card">
                           <img src=${book.img} class="card-img-top" alt="${book.title}" />
@@ -27,10 +38,13 @@ fetch(" https://striveschool-api.herokuapp.com/books")
                           </div>
                         </div>
                       `;
+
+      cardBody.appendChild(h5);
+      cardBody.appendChild(p);
+      cardBody.appendChild(button);
+      card.appendChild(img);
+      card.appendChild();
+      col.appendChild();
+      row.appendChild();
     });
   });
-
-// function deleteCard(a) {
-//   const cardbook = a.closest(".card");
-//   cardbook.remove();
-// }
